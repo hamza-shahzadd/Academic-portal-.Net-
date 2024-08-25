@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51,51,51);
+}
+
+p a {
+    text-decoration: none;
+    color: rgb(51,51,51);
+    transition: 0.5s;
+}
+
+p a:hover {
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+  
+input[type="text"], input[type="email"], textarea {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+
+.heading {
+    margin-top:60px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(75, 75, 255);
+    color: white;
+}
+  
+.left {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+  
+.right {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+}
+
+hr {
+    border-width: 1px;
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    text-align: center;
+}
+
+button {
+    background-color: #ffffff; /* Green */
+    border: 2px solid rgb(48, 48, 48);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+  
+button:hover {
+    background-color: #376cff;
+    color: #ffffff;
+    transform:scale(1.1);
+}
+
+input[type="time"] {
+    display: inline-block;
+    height: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    color:#42b4d6;
+    transition: 0.5s;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-size: 37px;
+}
+
+.tableContainer {
+    overflow-x:auto;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    font-size: small;
+    width: 100%;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd){
+    background-color: white;
+}
+
+table td, table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(75, 75, 255);
+    color: white;
+}
+
+input[type="date"] {
+    display: inline-block;
+    height: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+textarea:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 5px #008080;
+}
+
+.profileImage {
+    width: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.navbar {
+    overflow:visible;
+    background-color: white;
+    font-family: Arial;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index:10;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right:1px solid lightgrey;
+    transition:background-color 0.5s;
+    transition:color 0.5s;
+    transition:transform 0.5s;
+}
+
+select {
+    border: 2px solid rgb(116, 116, 116);
+    background-color: #ffffff;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+  
+option {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    
+}
+
+option:checked {
+    background-color: #061ffd;
+    color: #fff;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    z-index: 11
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: inherit;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+    border-left: 1px solid lightgray;
+    z-index: 11;
+    transition:background-color 0.5s;
+    transition:color 0.5s;
+    transition:transform 0.5s;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:rgb(75, 75, 255);
+    color:white;
+    transform:scale(1.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    border: none;
+    outline: none;
+    float: none;
+    font-size: 16px;
+    width: 100%;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.projects {
+    text-align: center;
+    border: 1px solid rgb(148, 146, 146);
+    background-color: rgb(250, 246, 246);
+}
+
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.75s;
+    z-index:1;
+}
+
+.image:hover{
+    transform:scale(1.05);
+}
+
+.imageText {
+    font-size: 25px;
+    color:#42b4d6;
+    position: absolute;
+    bottom: 23px;
+    left:20px;
+    background-color:rgba(256,256,256,0.9);
+    width:inherit;
+    box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px #000000;
+}
+
+footer {
+    border-top: 2px solid black;
+    background-color: rgb(0, 118, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 28px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.videoList {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.videoContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
